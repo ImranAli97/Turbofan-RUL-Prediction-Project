@@ -32,16 +32,16 @@ Install dependencies pip install -r requirements.txt
 
 ## Results
 
-1)Comparative analysis across batch sizes, trials, and epochs.
-2)Includes training vs. validation loss curves and MAE trends for model selection.
-3)Sample prediction vs. ground-truth RUL plots to inspect generalization.
+1) Comparative analysis across batch sizes, trials, and epochs.
+2) Includes training vs. validation loss curves and MAE trends for model selection.
+3) Sample prediction vs. ground-truth RUL plots to inspect generalization.
 
 
 ## Future Improvements
 
-1)Evaluate alternative architectures (Temporal Convolutional Networks, Informer, TFT).
-2)Add domain-specific RUL loss/score functions and confidence intervals.
-3)Deploy as an API (FastAPI) for real-time RUL inference on new sequences.
+1) Evaluate alternative architectures (Temporal Convolutional Networks, Informer, TFT).
+2) Add domain-specific RUL loss/score functions and confidence intervals.
+3) Deploy as an API (FastAPI) for real-time RUL inference on new sequences.
 
 ## Contact
 
