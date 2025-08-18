@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Turbofan RUL Prediction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root { --gap: 14px; }
     * { box-sizing: border-box; }
-    body { font-family: system-ui, Arial, sans-serif; margin: 0; color: #222; line-height: 1.6; }
-    header { padding: 40px 20px; text-align: center; background: #f6f8fa; }
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; color: #222; line-height: 1.6; background: #ffffff; }
+    header { padding: 44px 20px; text-align: center; background: #f6f8fa; }
     h1 { margin: 0 0 10px 0; font-size: 36px; }
     h2 { margin: 30px 0 10px 0; font-size: 22px; }
     p { margin: 8px 0; }
     .wrap { max-width: 980px; margin: 0 auto; padding: 20px; }
-    .btn_row { display: flex; flex-wrap: wrap; gap: var(--gap); margin-top: 14px; }
+    .btn_row { display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center; margin-top: 16px; }
     .btn {
-      display: inline-block; padding: 10px 14px; border: 1px solid #d0d7de; border-radius: 8px;
+      display: inline-block; padding: 10px 14px; border: 1px solid #d0d7de; border-radius: 10px;
       text-decoration: none; color: #0969da; background: #fff;
     }
     .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--gap); }
@@ -23,9 +23,7 @@
     pre, code { background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 8px; padding: 10px; overflow: auto; }
     ul { padding-left: 18px; }
     li { margin: 6px 0; }
-    .img_box { border: 1px solid #d0d7de; border-radius: 12px; overflow: hidden; background: #fff; }
-    .img_box img { display: block; width: 100%; height: auto; }
-    footer { text-align: center; color: #666; padding: 24px; }
+    footer { text-align: center; color: #666; padding: 28px; }
   </style>
 </head>
 <body>
@@ -48,8 +46,8 @@
     <section>
       <h2>Overview</h2>
       <p>
-        This project predicts remaining useful life for turbofan engines with a transformer style model and a simple training pipeline.
-        It includes data loading, feature prep, model training and evaluation in a clear structure that is easy to reuse.
+        This project predicts remaining useful life for turbofan engines with a transformer style model and a clear training pipeline.
+        It covers data loading, feature preparation, model training, and evaluation in a structure that is easy to reuse.
       </p>
     </section>
 
@@ -57,63 +55,63 @@
       <div class="card">
         <h2>Features</h2>
         <ul>
-          <li>Clean Python modules for data, model, training, and utilities</li>
+          <li>Modular Python code for data, model, training, and utilities</li>
           <li>Configurable training loop with metric tracking</li>
-          <li>Ready for experiments and result logging</li>
+          <li>Ready for experiments and logging</li>
         </ul>
       </div>
+
       <div class="card">
         <h2>Project files</h2>
         <ul>
-          <li><a href="main.py">main.py</a> run entry</li>
+          <li><a href="main.py">main.py</a> entry point</li>
           <li><a href="training.py">training.py</a> trainer logic</li>
           <li><a href="model.py">model.py</a> network</li>
           <li><a href="dataset.py">dataset.py</a> loaders</li>
-          <li><a href="optimizer.py">optimizer.py</a> train config</li>
+          <li><a href="optimizer.py">optimizer.py</a> training config</li>
           <li><a href="utils.py">utils.py</a> helpers</li>
           <li><a href="README.md">README.md</a> usage notes</li>
           <li><a href="requirements.txt">requirements.txt</a> packages</li>
         </ul>
       </div>
+
       <div class="card">
         <h2>How to run locally</h2>
         <ol>
-          <li>Install Python and a virtual environment tool</li>
-          <li>Create and activate a virtual environment</li>
-          <li>Install the packages listed in the requirements file</li>
-          <li>Open the project in your editor</li>
-          <li>Run the entry script to train or evaluate</li>
+          <li>Install Python and create a virtual environment</li>
+          <li>Activate the environment</li>
+          <li>Install the packages from the requirements file</li>
+          <li>Place the dataset as described in the readme file</li>
+          <li>Run the entry script</li>
         </ol>
-        <p>Full steps are in the readme file linked above.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Results</h2>
-      <p>Add a figure from your runs here. Place an image at the project root named <code>screenshot.png</code> and it will show below.</p>
-      <div class="img_box">
-        <img src="screenshot.png" alt="Training or evaluation result placeholder">
+        <pre>
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+python -m venv .venv
+# On Windows: .venv\Scripts\activate
+# On macOS or Linux: source .venv/bin/activate
+pip install -r requirements.txt
+python main.py
+        </pre>
       </div>
     </section>
 
     <section>
       <h2>Dataset</h2>
       <p>
-        The project targets the C MAPSS turbofan dataset. Provide a short note on where to get the data and how to place it
-        so the loader can find it. If your loader expects a folder named data, mention the expected layout here.
+        The project uses the NASA C MAPSS turbofan dataset. Mention where to download the files and the expected folder layout
+        so the loader can find them. If you store data in a folder named <code>data</code>, add a short example of the layout.
       </p>
     </section>
 
     <section>
       <h2>Credits</h2>
-      <p>
-        Built by Imran Ali. If you use or extend this work, please link back to the repository.
-      </p>
+      <p>Built by Imran Ali. If you use or extend this work, please link back to the repository.</p>
     </section>
   </main>
 
   <footer>
-    <p>View the code on GitHub from the buttons above.</p>
+    <p>View the code using the buttons above.</p>
   </footer>
 </body>
 </html>
