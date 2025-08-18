@@ -16,7 +16,6 @@ Results Visualization  Training vs validation curves and prediction plots.
 
 ## Installation
 
-stallation
 Clone the repository git clone https://github.com/your-username/rul-prediction.git cd rul-prediction
 
 Create a virtual environment and activate it python -m venv venv source venv/bin/activate # On Windows use: venv\Scripts\activate
