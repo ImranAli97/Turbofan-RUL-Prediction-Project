@@ -42,6 +42,10 @@ Install dependencies pip install -r requirements.txt
 2) Add domain-specific RUL loss/score functions and confidence intervals.
 3) Deploy as an API (FastAPI) for real-time RUL inference on new sequences.
 
+4) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ## Contact
 
 For questions or contributions, feel free to open an issue or reach out at 'immiali517@gmail.com'.
+
+
